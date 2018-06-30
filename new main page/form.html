@@ -1,0 +1,445 @@
+<html>
+	<head>
+		<style>
+		.f{
+		font-family:aerial;
+		/*width:50%;*/
+		/*margin-left:25%;*/
+		color: black;
+		background :#E8E2E0;
+		border-radius: 40px;
+		}
+		#a{
+		margin-left:5%;
+		}
+		label {
+			display: inline-block;
+			margin-left:5%;
+			font-size:20px;
+		}
+		p{
+			font-size:20px;
+		}
+		fieldset{
+			border-radius: 40px;
+			box-shadow: 5px 5px 5px ;
+		}
+		input[type="text"],textarea,input[type="file"] {
+		}
+		input[type="radio"] {
+			margin-left:5%;
+		}
+		input[type="text"],input[type="phone_number"],input[type="email"],input[type="number"],select,textarea {
+			padding: 0.5rem 0.5rem;
+			/*box-shadow: 5px 5px 5px ;*/
+		}
+		.box{
+  			/*box-shadow: 5px 5px 5px green;*/
+  		}
+		input, textarea {
+			border: 0;
+  			}
+		.t {
+    		position: relative;
+    		display: inline-block;
+    		border-bottom: 1px gray;
+		}
+
+		.t .ttext {
+   			visibility: hidden;
+    		width: 500px;
+    		background-color: gray;
+    		color: #fff;
+    		text-align: center;
+    		border-radius: 10px;
+    		padding: 10px 0;
+    		position: absolute;
+    		z-index: 1;
+    		bottom: 150%;
+   			left: 50%;
+    		margin-left: -200px;
+		}
+		.t .ttext::after {
+    		content: "";
+    		position: absolute;
+    		top: 100%;
+    		left: 40%;
+    		margin-left: -6px;
+    		border-width:8px;
+    		border-style: solid;
+    		border-color: gray transparent transparent transparent;
+		}
+		.t:hover .ttext {
+    		visibility: visible;
+		}
+		.q {
+    		position: relative;
+    		display: inline-block;
+    		border-bottom: 1px gray;
+		}
+
+		.q .qtext {
+   			visibility: hidden;
+    		width: 300px;
+    		background-color: gray;
+    		color: #fff;
+    		text-align: center;
+    		border-radius: 10px;
+    		padding: 10px 5px;
+    		position: absolute;
+    		z-index: 1;
+    		bottom: 150%;
+   			left: 50%;
+    		margin-left: -125px;
+		}
+		.q .qtext::after {
+    		content: "";
+    		position: absolute;
+    		top: 100%;
+    		left: 40%;
+    		margin-left: -6px;
+    		border-width:8px;
+    		border-style: solid;
+    		border-color: gray transparent transparent transparent;
+		}
+		.q:hover .qtext {
+    		visibility: visible;
+		}
+		.box {
+  			width:50px;
+  			padding-top:6px;
+  			border-style:solid;
+  			border-color:black;
+  			border-width:1px;
+  			padding-left:6px;
+  			padding-right: 0px;
+  			padding-bottom:8px;
+		}
+		textarea {
+			width :40%;
+			min-height: 8em;
+		}
+		img {
+			border-radius:50%;
+		}
+		#button{
+			color:green;
+			margin-left:40%;
+			font-size:20px;
+			height:35px;
+			width:90px;
+
+		}
+		.row {
+		    display: -webkit-flex;
+		    display: flex;
+		}
+
+		/* Create three equal columns that sits next to each other */
+		.column {
+			flex: 50%;
+	 padding: 10px;
+	 height: 100px; /* Should be removed. Only for demonstration */
+}
+		.columnA {
+			flex: 50%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+}
+.header {
+	overflow: hidden;
+	background-color: #1fc435;
+	padding:  2px;
+}
+
+/* Style the header links */
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+/* Style the active/current link*/
+.header a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+	float: right;
+}
+
+		.footer {
+		  overflow: hidden;
+		  background-color: #928b8a;
+		  padding: 5px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+       <a href="#default" class="logo">Nestify</a>
+			 <div class="header-right">
+			 <a href="my.html">HOME</a>
+			 <a href="login.html">SIGN IN</a>
+		 </div>
+		</div>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<form class="f">
+		<h1 align="center">SIGN UP &nbsp FOR &nbsp STARTUP</h1>
+		<!--<hr style="height:5px">-->
+		<fieldset>
+			<legend align="center"><h2>Founders Details</h2></legend>
+			<div class="row"><!--row has two columns -->
+				<div class="column">
+		     <p>
+		        <label style="width: 200px" for="customer_name">Name<span style="color:red">*</span> </label>
+		        <input type="text" name="customer_name" id="customer_name" value="" required>
+		     </p>
+		      <p>
+		     <label style="width: 200px" for="des">Designation<span style="color:red">*</span> </label>
+		     <input type="text" name="designation" id="des" value="" required size="50px">
+		     </p>
+		</div><!--first column end here-->
+		<div class="column">
+			<p>
+		   <label  style="width: 200px"for="phone">Phone<span style="color:red">*</span> </label>
+		   <input type="phone_number" name="phone_number" required id="phone" value="" maxlength="10">
+		  </p>
+		  <p>
+		  <label  style="width: 200px"for="email">Email<span style="color:red">*</span> </label>
+		  <input type="email" name="email_address" required id="email" value="">
+		  </p>
+	</div><!-- 2nd column end here-->
+</div><!-- row end here -->
+		<p>
+		<label style="width: 200px" for="LinkedIn">LinkedIn URL </label>
+		<input type="text" name="url" id="LinkedIn" value="" size="50px">
+		</p>
+			<p id="a">Gender<span style="color:red">*</span>
+			<input type="radio" name="gender" value="Male" required>Male&nbsp&nbsp
+			<input type="radio" name="gender" value="Female">Female
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend align="center"><h2>Entity Details</h2></legend>
+			<p>
+		<label style="width: 200px" for="entity_name">Name of the Entity<span style="color:red">*</span> </label>
+		<input type="text" name="entity_name" id="entity_name" value="" required>
+		</p>
+		<p>
+		<label style="width: 200px" for="entity_nature">Nature of the Entity<span style="color:red">*</span> </label>
+			<select name="expectation_from_nestify" id="entity_nature" required>
+				<option value="">Select</option>
+				<option value="Private Limited Company">Private Limited Company</option>
+				<option value="Limited Liability Company">Limited Liability Company</option>
+				<option value="Registed Partnership">Registed Partnership</option>
+			</select>
+		</p>
+		<p>
+		<label style="width: 200px" for="website_address">Website Address </label>
+		<input type="text" name="website_address" id="website_address" value="">
+		</p>
+			</fieldset>
+			<fieldset>
+				<legend align="center"><h2>Full Address</h2></legend>
+				<div class="row">
+					<div class="columnA" ><!--1st column-->
+				<p>
+				<label style="width: 200px" for="address_1">Address line 1<span style="color:red">*</span> </label>
+				<input type="text"required id="address_1">
+				</p>
+				<p>
+				<label style="width: 200px" for="address_2">Address line 2<span style="color:red">*</span></label>
+				<input type="text"required id="address_2">
+				</p>
+				<p>
+				<label style="width: 200px" for="address_3">Address line 3 </label>
+				<input type="text" id="address_3">
+				</p>
+			</div>
+			<div class="columnA" ><!--2nd column-->
+				<p>
+				<label style="width: 200px" for="City">City/Village/Town<span style="color:red">*</span> </label>
+				<input type="text"required id="city">
+				</p>
+				<p>
+				<label style="width: 200px" for="state">State<span style="color:red">*</span> </label>
+				<input type="text"required id="State">
+				</p>
+				<p>
+				<label style="width: 200px" for="district">District<span style="color:red">*</span> </label>
+				<input type="text"required id="district">
+				</p>
+				<p>
+				<label style="width: 200px" for="pin_code">Pin code<span style="color:red">*</span> </label>
+				<input type="number"required id="pin_code">
+				</p>
+			</div>
+		</div>
+			</fieldset>
+			<fieldset>
+				<legend align="center"><h2>Information Required</h2></legend>
+			<label for="number_of_employees">Current number of Employees (Including founders)<span style="color:red">*</span> &nbsp&nbsp</label>
+			<input type="number" name="number_of_employees" id="number_of_employees" value="" required><br><br>
+			<label for="stage">What is the current stage of development of your product/service?<span style="color:red">*</span> </label><br>
+  				<input type="radio" name="stage" value="Ideation" id="stage" required> Ideation
+  				<div class="q">
+  					<img src="img.jpg" width="15px" height="15px">
+  					<span class="qtext">You have an idea for a product or service >> You are on your way to build a prototype</span>
+  				</div>
+  				<input type="radio" name="stage" value="Validation" id="stage"> Validation
+  				<div class="q">
+  					<img src="img.jpg" width="15px" height="15px">
+  					<span class="qtext">You have built a prototype >> You are on your way to acquire customers</span>
+  				</div>
+  				<input type="radio" name="stage" value="Early_traction" id="stage"> Early Traction
+  				<div class="q">
+  					<img src="img.jpg" width="15px" height="15px">
+  					<span class="qtext">You have acquired your first set of customers and have started to generate revenue >> Your next step is to grow and generate sustainable profit.</span>
+  				</div>
+  				<input type="radio" name="stage" value="Scaling" id="stage"> Scaling
+  				<div class="q">
+  					<img src="img.jpg" width="15px" height="15px">
+  					<span class="qtext">You are generating sustainable profits >> Your next milestone is to explore new markets.</span>
+  				</div>
+  				<br><br>
+			<label for="startup applied for any IPR">Has your startup applied for any IPR(Intellectual Property Right)?<span style="color:red">*</span> </label><br>
+  				<input type="radio" name="Startup applied for any IPR" value="Yes" id="startup applied for any IPR" required> Yes
+  				<input type="radio" name="Startup applied for any IPR" value="No" id="startup applied for any IPR"> No<br><br>
+			<label for="Innovative/existing">Is the startup cresting an innovative product/service/process or improving an existing product/sevice/process<span style="color:red">*</span> </label><br>
+  				<input type="radio" name="Innovative/existing" value="Yes" id="Innovative/existing" required> Yes
+  				<input type="radio" name="Innovative/existing" value="No" id="Innovative/existing"> No<br><br>
+			<label for="any_funding">Has your startup received any funding?<span style="color:red">*</span> </label><br>
+  				<input type="radio" name="any_funding" value="Yes" id="any_funding" required> Yes
+  				<input type="radio" name="any_funding" value="No" id="any_funding"> No <br><br>
+  				<label id="a">
+					Proof of Funding </label>&nbsp&nbsp
+					<span class="box">
+					<input type="file" id="file" name="pic" accept="image/*">
+					</span>
+					<br><br>
+					<div id="a">
+					<i>(The Proof of funding must be uploaded in pdf,png,jpg with file size not exceeding 5 MB)</i>
+					</div>
+					<br>
+				<label id="a">
+					Incorporation/ Registration Certificate<span style="color:red">*</span> </label>&nbsp&nbsp
+					<span class="box">
+					<input type="file" id="file" name="pic" accept="image/*" required class="bind">
+					</span>
+					<br><br>
+					<div id="a" >
+					<i>(Please upload company incorporation certificate issued by the Ministry of Corporate Affairs. The Certificate must be pdf, png, jpg format with file size not exceeding 5 MB.)</i>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend align="center"><h2>Startup Activities</h2></legend>
+				<label id="a">
+				What is the problem the startup is solving? (250 words maximum)<span style="color:red">*</span> : </label><br>
+				<textarea type="text"required id="a"></textarea><br>
+				<label id="a"><br>
+				How does your startup propose to solve this problem? (250 words maximum)<span style="color:red">*</span> : </label><br>
+				<textarea type="text"required id="a"></textarea><br>
+				<label id="a"><br>
+				What is the uniqueness of your solution? (250 words maximum)<span style="color:red">*</span> : </label><br>
+				<textarea type="text"required id="a"></textarea><br>
+				<label id="a"><br>
+				How does your startup generate revenue? (250 words maximum)<span style="color:red">*</span> : </label><br>
+				<textarea type="text"required id="a"></textarea><br>
+			</fieldset>
+			<fieldset>
+				<legend align="center"><h2>Funding Information</h2></legend>
+				<p>
+				<label for="expectation_from_nestify">What do you expect from Nestify?<span style="color:red">*</span> &nbsp&nbsp</label>
+				<select name="expectation_from_nestify" id="expectation_from_nestify" required>
+					<option value="">Select</option>
+					<option value="I have a lead investor,I want to close the round">I have a lead investor,I want to close the round</option>
+					<option value="I have some commitment,I want to close the round">I have some commitment,I want to close the round</option>
+					<option value="I don't have any commitment for my startup">I don't have any commitment for my startup</option>
+					<option value="I want to fundraise and don't know what to do">I want to fundraise and don't know what to do</option>
+				</select>
+				</p>
+				<p>
+				<label for="amount">What is the amount you want to raise? (In lakhs(INR)) </label>
+				<input type="phone_number" name="money" id="amount" maxlength="3" value="">
+				</p>
+			</fieldset>
+			<br>
+			<input type="checkbox" name="" value="" required id="a"><label style="margin-left:0%">I here by declare that our entity</label>
+			<ul type="circle" id="a" style="font-size:20px">
+				<li>has not been incorporated for more than 7 years, (10 years for Startups in the biotechnology sector); and</li>
+				<li>is working towards innovation, development or improvement of products or processes or services, or if it is a scalable business model with a high potential of employment generation or wealth creation; and</li>
+				<li>has not formed the entity by splitting up or reconstruction of a business already in existence.</li>
+			</ul>
+			<br>
+			<input type="checkbox" name="" required id="a"><label style="margin-left:0%">I accept the
+				<div class="t"><a href="">
+			Terms and Conditions
+			<span class="ttext">
+					<strong>NOTE:</strong>
+					<ol>
+					<li>An entity shall cease to be a Startup on completion of seven years from the date of its incorporation/ registration or if its turnover for any prevoius year exceeds Rupees 25 crores.However,in respect of Startups in the biotechnology sector,an entity shall cease to be a startup on completion of ten years from the date of its incorporation/registration or if its turnover for any previous year exceeds Rupees 25crores.</li>
+					<li>Turnover is as defined under the Companies Act,2013.</li>
+					</ol>
+					<p>
+					<strong>REVOCATION:</strong>
+				</p>
+				<p>
+					Subsequently,if such recognation is found to have been obtained without uploading the relevant documents or on the basisi of false information,DIPP reserves the right to revoke the recognition certificate and certificate of an eligible bussiness for tax benifits immediately without any prior notice or reason.
+				</p>
+			</span>
+		</a>
+		</div>
+		</label>
+			<br>
+			<p >
+			<input type="submit" value="SUBMIT" id="button">
+			</p>
+			<br>
+		</form>
+		<div class="footer">
+
+					<div style="text-align: center;">
+							<p>
+								<a href="https://www.flipkart.com">About Us</a>
+								<a href="https://www.amazon.in" style="margin-left: 5px;">Team</a>
+								<a href="https://youtube.com" style="margin-left: 5px;">Blog</a>
+								<a href="https://w3schools.com" style="margin-left: 5px">FAQ</a>
+
+								<div class="header-right">
+						      <a href="#" class="fa fa-facebook"></a>
+						      <a href="#" class="fa fa-twitter"></a>
+						      <a href="#" class="fa fa-google"></a>
+						      <a href="#" class="fa fa-linkedin"></a>
+						      <a href="#" class="fa fa-reddit"></a>
+						    </div>
+							</p>
+			  </div>
+
+			<h2>Disclamer:</h2>
+			<p>Neither LetsVenture Online Pte. Ltd. (“LetsVenture”) nor Indiepitch Solutions Private Limited (“IndiePitch”) is a stock exchange recognised by the Securities Exchange Board of India (SEBI) under the Securities Contract (Regulation) Act, 1956. The securities offered by any company registered on the online platform developed by LetsVenture, available at letsventure.com (“Platform”) are not traded on any stock exchange recognised by SEBI. LetsVenture does not allow any secondary market trading of securities on the Platform</p>
+		</div>
+	</body>
+</html>

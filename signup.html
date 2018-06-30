@@ -1,0 +1,204 @@
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: middle;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 10px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.Nestify {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+select
+{
+	width:200px;
+	height:40px;
+}
+</style>
+<link rel="icon" href="logo.png">
+<title>Nestify</title>
+<body>
+
+<form align="center" action="/action_page.php" style="border:1px solid #ccc">
+
+   <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <div class="imgcontainer">
+    <img src="nestify.jpg" alt="Nestify" class="Nestify">
+  </div>
+    <table align="center">
+     <tr>
+     <td>
+	<label for="fn"><b>First Name</b></label></td>
+      <td>
+    <input type="text" placeholder="Enter First Name" name="fn" required></td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ln"><b>Last Name</b></label></td>
+    <td>
+    <input type="text" placeholder="Enter Last Name" name="ln" required></td>
+    </tr>
+    <tr>
+    <td>
+    <label for="cn"><b>Contact Number</b></label></td>
+    <td>
+     <input type="text" placeholder="Enter Mobile Numebr" name="cn" required></td>
+    </tr>
+	    <tr>
+    <td>
+    <label for="email"><b>Email</b></label></td>
+    <td>
+     <input type="text" placeholder="Enter Email" name="email" required></td>
+     </tr>
+     <tr>
+     <td>
+    <label for="psw"><b>Password</b></label></td>
+    <td>
+    <input type="password" placeholder="Enter Password" name="psw" required></td></tr>
+    <tr>
+    <td>
+    <label for="psw-repeat"><b>Confirm Password</b></label></td>
+    <td>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required></td>
+    </tr>
+     <tr>
+     <td>
+    <label for="country"><b>Country</b></label></td>
+    <td><input type="text" placeholder="Enter Your Country" name="country" required></td>
+    </tr>
+    <tr>
+    <td>
+    <label for="state"><b>State</b></label></td>
+    <td><input type="text" placeholder="Enter Your State" name="state" required></td>
+    </tr>
+    <tr>
+    <td><label for="city"><b>City</b></label></td>
+    <td><input type="text" placeholder="Enter Your City" name="city" required></td>
+     </tr>
+     <tr>
+     <td>
+<p style="font-weight:bold">How Did You Came To Hear About NESTIFY?</p></td>
+  	<td><select name="reference" placeholder="Please Select One">
+	<option value="referral from investor">Referral From Investor</option>
+	<option value="referral from startup">Referral From Startup</option>
+	<option value="news/media">News/Media</option>
+	<option value="events">Events</option>
+	<option value="social media">Social Media</option>
+	<option value="angel network membership">Angel Network Membership</option>
+	<option value="others">Others</option></td>
+      </tr>
+  <tr>
+  <td>
+<p style="font-weight:bold">What Are You Representing?</p></td>
+<td>
+	<select name="represent">
+	<option value="individual investor">Individual Investor</option>
+	<option value="accelerator/incubator">Accelerator/Incubator</option>
+	<option value="family office">Family Office</option>
+	<option value="vc fund">VC Fund</option>
+	<option value="Angel Network">Angel Network</option>
+	<option value="corporate fund">Corporate Fund</option>
+</td>
+</tr>
+ <td>   <label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label></td>
+</tr>
+<tr>
+<td colspan="2">
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+</td>
+</tr>
+    <div class="clearfix">
+    <tr>
+     <td>
+    <button type="button" class="cancelbtn">Cancel</button></td>
+      <td><button type="submit" class="signupbtn">Sign Up</button></td>
+     </tr>
+    </div>
+  </div>
+</table>
+</form>
+</body>
+</html>

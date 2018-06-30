@@ -1,0 +1,386 @@
+<html lang="en">
+<head>
+<style>
+.header{
+	position: relative;
+	margin-top: 10px;
+	background-color: #1fc435;
+ padding: 2px;
+ overflow: hidden;
+  color: white;
+ font-size: 25px;
+ font-weight: bold;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+ footer a{
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+	color: #000004;
+}
+footer h2
+{
+	color: #070e5f;
+	text-decoration: underline;
+	text-align:center;
+}
+footer p
+{
+	font-size:20px;
+	font-style: oblique;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+	width:50%;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+.bottomleft {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    }
+.button {
+    background-color: grey; /* Green */
+    color: white;
+    height:35px;
+    height: auto;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin-left: 20px;
+
+}
+.button:hover{
+	background-color:lightblue;
+	color:red;
+}
+.main .h1{
+    text-align: center;
+    font-family: italic;
+    font-size: 30px;
+}
+.h2{
+    text-align:center;
+    font-family: italic;
+    font-size: 25px;
+    color:grey;
+}
+.p{
+    text-align: center;
+}
+.h3  p{
+    margin-left: 50%;
+    font-size:40px;
+    border-left: 2px solid red;
+}
+.float{
+    box-sizing: border-box;
+    margin-left: 200px;
+    width: 13%;
+    height: 100px;
+    height: auto;
+    color: grey;
+    text-align: center;
+}
+.float1{
+    box-sizing: border-box;
+    margin-right:20%;
+    width: 12%;
+    height: 100px;
+    height: auto;
+    color: grey;
+    text-align: center;
+}
+.float2{
+    color:lightblue;
+}
+.h4{
+    margin-left: 400px;
+}
+.left{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.fund{
+    box-sizing: border-box;
+    margin-left: 150px;
+    width: 13%;
+    height: 100px;
+    height: auto;
+    color: grey;
+    text-align: center;
+}
+a{
+    color: grey;
+}
+.mid{
+	box-sizing: border-box;
+	padding:10px;
+}
+.rowm{
+	box-sizing: content-box;
+  padding-top: 10px;
+}
+.columnm {
+    float: left;
+    width: 33.33%;
+    height: 170px;
+		text-align: center;/* Should be removed. Only for demonstration */
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+		color: #a6a0a0;
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1 {
+	float: left;
+	 width: 22.6%;
+	 padding: 15px;
+	 height: 100px;
+	 text-align: center;
+}
+.column1 p{
+	text-align: center;
+}
+
+.fa{
+	font-size: 50px;
+  padding:10px;
+}
+.header img {
+   /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+ padding-left:20px;/* Some padding */
+    width: 50px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.header img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.header1 img {
+   /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+ padding-left:20px;/* Some padding */
+    width: 50px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.header1 img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+<title>Nestify</title>
+<link rel="icon" href="logo.png">
+</head>
+<body bgcolor= #e9f7ef >
+    <!--<p align="right" style="margin-top:20px;" >
+	<input type="button" value="Sign In" class="button" style="">
+    <input type="button" value="Sign Up" class="button">
+    </p>-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="mainbig"><!--to keep it contained-->
+	<div class="header">
+	 <i style="font-size:24px" ><img src="logo.png"></i>
+		<!--<img src="2.jpg" width="100%" height="600px"  >-->
+		<!--<div class="bottomleft">-->
+		<div class="header-right">
+			<a href="my.html">HOME</a>
+			<a href="form.html">SIGN UP</a>
+      <a href="login.html">SIGN IN</a>
+		</div>
+	</div>
+
+
+	<div class="main">
+       <p class="h1">DISCOVER AND CONNECT WITH GLOBAL INVESTORS</p>
+        <p class="h2">Get access to over 1000+ Investors,Govt funds and Private funds</p>
+    </div>
+
+    <div class="rowm">
+        <div class="columnm" style="float: left;">
+					  <i class="fa fa-chain" style="font-size:36px"></i>
+            <h3>Connect with Investors</h3>
+            <p>
+              Connect and chat with investors in a secure and private environment
+            </p>
+        </div>
+
+        <div class="columnm" style="float: left;">
+					  <i class="fa fa-newspaper-o" style="font-size:36px"></i>
+            <h3>Get Featured</h3>
+          <p>
+               LetsVenture actively curates and promotes your Startup to help close
+               your round super fast
+          </p>
+        </div>
+        <div class="columnm" style="float: right;">
+					<i class="fa fa-line-chart"style="font-size:36px"></i>
+            <h3>Track your Funding</h3>
+            <p>
+               We help you track commits from Investors and complete your paperwork
+            </p>
+        </div>
+    </div>
+
+
+    <div class="rowm">
+        <p><br><br>
+				<h1 class="h4">Do you want to Raise Funds?<input type="button" value="SIGN UP" class="button"> </h1></p>
+    </div>
+    <br>
+		<hr>
+		<div clas="mid">
+		    <p style="font-size: 40px; text-align: center;">How Does Govt Help Startups</p>
+		    <p style="font-size: 25px; color:grey; text-align: center;">Get a Quick Guide Of How Govt Works</p>
+				<p style="text-align: center;">
+				<object data="https://www.youtube.com/embed/uvQRDU0gN9o?autoplay=1"
+   width="560" height="315" ></object></p>
+		</div>
+		<hr color="lightgrey" style="width: 100%;">
+		<h1 style="color: grey; text-align:center;">STARTUPS ESTABLISHED WITH OUR HELP</h1>
+		<div>
+		    <div class="left">
+		        <img src="Spics/vistarooms.png" style="float: left;">
+		        <img src="Spics/amigobulls.png" style="margin-left: 50px;">
+		        <img src="Spics/massblurb.png" style="margin-left: 50px;">
+		        <img src="Spics/tydy.png" style="margin-left: 50px">
+		    </div>
+		    <br><br>
+		    <div>
+		        <img src="Spics/carback.png" class="left">
+		        <img src="Spics/adpushup.png" style="margin-left: 50px">
+		        <img src="Spics/images.jpg" style="margin-left: 50px">
+		    </div>
+		    <br><br>
+		    <h1 style="color:blue; text-align: center;">
+		        GET STARTED FOR FREE
+		        <input type="button" class="button" value="SIGN UP">
+		    </h1>
+		</div>
+		<div>
+		    <div style="background-color: #cd6155;float: left; width: 40%;height:auto;height: 600px;">
+					<br>
+		        <h1 style="color:white;text-align:center;font:">
+							Your work is going to fill a large
+							part of your life, and the only way to be truly satisfied is to do what you believe is
+							great work. And the only way to do great work is to love what you do.</h1>
+							<br><br>
+						<h2 style="color:white;text-align:center;">Steve Jobs</h2>
+						<h3 style="color:white;text-align:center;"> Co-Founder, Chairman and CEO, Apple</h2>
+		    </div>
+		    <div>
+		        <img src="Spics/1.png" style="float: right;width: 60%; height:auto;height: 600px;">
+		    </div>
+				<br><br>
+		    <h1 style="color: #2e86c1;text-align: center;">
+					<br>
+					Get started with your fundrasing today
+		        <a href="form.html"><input type="button" class="button" value="SIGN UP"></a>
+		    </h1>
+		    <hr>
+		    <div>
+		        <h1 style="text-align: center; color: #69dbe6;">NOT FUNDRASING?</h1>
+		        <p style="color:grey;text-align: center;">It's fine,get access to our large network of Services</p>
+		    </div>
+				<div class="row1">
+        <div class="column1" style="background-color: #52be80;">
+              <i class="fa fa-user-plus" style="font-size:36px;text-align: center;"></i>
+               <p>Access Community of Mentors,Advisors</p>
+        </div>
+        <div class="column1" style="background-color: #7dcea0;">
+              <i class="fa fa-unlock" style="font-size:36px"></i>
+             <p>Post Job opeaning for building your A-Team</p>
+        </div>
+       <div class="column1" style="background-color: #a9dfbf ;">
+               <i class="fa fa-check" style="font-size:36px"></i>
+              <p>connect with Trusted service providers</p>
+        </div>
+       <div class="column1" style="background-color: #d4efdf ;">
+              <i class="fa fa-calendar-check-o" style="font-size:36px"></i>
+                <p>Apply to Incuubators,Accelerators,Startup Competitions</p>
+       </div>
+     </div>
+		    <hr>
+		    <div style="color:grey">
+		        <h1 style="text-align: center;color: #2e86c1 ;">WE OPENSOURCED ALL OUR LEGAL DOCUMENTS</h1>
+		        <p style="text-align: center;">Moving one step closer to a transparent Startup Eco System in INDIA</p>
+		    </div>
+		    <div>
+		        <p style="text-align: center;color:#69dbe6; font-size: 35px;">Get free access to legal documents
+		            <input type="button" class="button" value="Download"></p>
+		    </div>
+		    <hr style="color:lightgrey; width:100%;">
+		    <div>
+		        <h1 style="text-align: center;color:  #2e86c1;">STAY UPDATED</h1>
+		        <p style="text-align: center;color:grey;">We will keep you in the loop with ecosystem trends and ecosystem</p>
+		        <p style="text-align: center;">
+		            <input style="color:lightgrey; width: 300px;height: 30px;" type="text" value="type your email to signup ">
+		            <input type="button" class="button" value="SUBCRIBE">
+		        </p>
+		    </div>
+		  </div>
+			<footer style="background-color:lightgrey; height: 200px;">
+					<div class ="footer" style="text-align:left; margin-top: 20px;">
+									<p style="margin-top: 50px;padding: 5px;">
+										<i style="font-size:24px" class="header1"><img src="logo.png"></i>
+										<a href="https://www.flipkart.com">About Us</a>
+										<a href="https://www.amazon.in" >Team</a>
+										<a href="https://youtube.com" >Blog</a>
+										<a href="https://w3schools.com" >FAQ</a>
+
+										<img src="Spics/fa.png" style="float: right;margin-right: 100px;">
+										<img src="Spics/tw.png" style="float: right; margin-right: 10px;">
+										<img src="Spics/go.png" style="float: right;margin-right: 10px;">
+										<img src="Spics/in.png" style="margin-right: 10px; float: right;">
+									</p>
+						 </div>
+					<h2>Disclamer:</h2>
+					<p>We are a platform of information.Any dispute between two parties is not our responsibilty.Nestify does not allow any
+					secondary market trading of securities on the Platform </p>
+			</footer>
+	 </div>
+</body>
+</html>

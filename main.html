@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nestify</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body{
+  font-size: 28px;
+}
+</style>
+<link rel="icon" href="logo.png">
+</head>
+<body bgcolor:"#e2f8de">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <img src="pics/images.png" alt="Avatar" class="avatar">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  </div>
+
+
+
+  <script>
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+  }
+  </script>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main" bgcolor:"#e2f8de">
+
+<!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="header">
+   <i style="font-size:24px" class="fa"><img src="logo.png"></i>
+   <div class="header-right">
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-google"></a>
+     <a href="#" class="fa fa-linkedin"></a>
+     <a href="#" class="fa fa-reddit"></a>
+   </div>
+ </div>
+
+  <div class="content11">
+    <div class="transbox">
+   <h1>NESTIFY</h1>
+   <p>A website to bridge the gap for Startups</p>
+ </div>
+ </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!--<div class="icon-bar" >
+    Use any element to open the sidenav
+  <a href="#"><span onclick="openNav()"><i class="fa fa-bars"></i></span></a>
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-globe"></i></a>
+</div>-->
+
+<div id="navbar">
+ <!--<a href="#"><span onclick="openNav()"><i class="fa fa-bars"></i></span></a>-->
+ <a href="my.html">Home</a>
+ <a href="incubator.html">Invest</a>
+ <a href="startup.html">Get Funded</a>
+ <a href="sertrail.html">Services</a>
+ <a href="contact.html">Contact</a>
+ <a href="FAQ.html">FAQ</a>
+</div>
+<br>
+<div class="row">
+  <div class="column11" >
+    <h2>helping out someone to grow</h2>
+    <p>give support to statups help them to become THE CHANGE</p>
+    <button>I am incubator</button>
+  </div>
+  <div class="column12">
+    <h2>looking out to grow</h2>
+    <p>enjoy the support provided by our incubators, be THE CHANGE</p>
+    <button>I am Startup</button>
+  </div>
+</div>
+<br>
+<div id="box1">
+<div class="smartphone">
+  <div class="content1">
+    <div class="submain12">
+    <h3 style="background:rgb(112,56,37);text-align:center;color:white;height:30px;">Announcements</h3>
+    <marquee scrollamount="2" behaviour="scroll" direction="up" height="80%" width="">
+    <ul>
+    <a href=""><li>announcement1<br><br></li></a>
+    <a href=""><li>announcement2<br><br></li></a>
+    <a href=""><li>announcement3<br><br></li></a>
+    <a href=""><li>announcement4<br><br></li></a>
+    <a href=""><li>announcement5<br><br></li></a>
+    <a href=""><li>announcement6<br><br></li></a>
+    </ul>
+    </marquee>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+
+<div class="row1">
+  <div class="side">
+    <i class="fa fa-cogs"></i>
+    <h3>235</h3>
+    <h4 id="next">DEALS FUNDED</h4>
+    <i class="fa fa-briefcase" ></i>
+    <h3>155</h3>
+    <h4 id="next">NEST INCUBATORS</h4>
+    <i class="fa fa-money" ></i>
+    <h3>50M</h3>
+    <h4 id="next">USD RAISED</h4>
+  </div>
+
+  <div class="main">
+
+    <div class="headerM">
+        <h2>INVEST IN STARTUPS</h2>
+    </div>
+    <div class="rowM">
+      <div class="columnM" style="background-color:#f1faef;">
+        <i class="fa fa-globe"></i>
+        <h4>Get connected to companies globally</h4>
+      </div>
+     <div class="columnM" style="background-color:#f1faef;">
+       <i class="fa fa-handshake-o"></i>
+       <h4>Get support from professional experience</h4>
+       <hr>
+       <button>SIGN UP</button>
+     </div>
+     <div class="columnM" style="background-color:#f1faef;">
+       <i class="fa fa-line-chart"></i>
+       <h4>see the growth</h4>
+     </div>
+    </div>
+    <hr>
+    <div class="headerM">
+        <h2>NEW TO STARTUP</h2>
+    </div>
+    <div class="rowM">
+      <div class="columnM" style="background-color:#f1faef;">
+        <i class="fa fa-users"></i>
+        <h4>We will connect you to right support</h4>
+      </div>
+     <div class="columnM" style="background-color:#f1faef;">
+       <i class="fa fa-edit"></i>
+       <h4>Give you advise to have the edge in your profile</h4>
+       <hr>
+       <button>SIGN UP</button>
+     </div>
+     <div class="columnM" style="background-color:#f1faef;">
+       <i class="fa fa-inr"></i>
+       <h4>give your startup the market value funds</h4>
+     </div>
+    </div>
+
+  </div>
+</div>
+<hr>
+<div class="recfund">
+  <h1>Recently FUNDED on Nestify</h1>
+</div>
+<hr>
+<div class="fundpar">
+  <h1>Our Funding Partner</h1>
+</div>
+<footer style="background-color:lightgrey; height: 200px;">
+    <div style="text-align:left; margin-top: 20px;">
+            <p style="margin-top: 50px;padding: 5px;">
+              <i style="font-size:24px" class="header1"><img src="logo.png"></i>
+              <a href="https://www.flipkart.com">About Us</a>
+              <a href="https://www.amazon.in" >Team</a>
+              <a href="https://youtube.com" >Blog</a>
+              <a href="https://w3schools.com" >FAQ</a>
+
+              <img src="Spics/fa.png" style="float: right;margin-right: 100px;">
+              <img src="Spics/tw.png" style="float: right; margin-right: 10px;">
+              <img src="Spics/go.png" style="float: right;margin-right: 10px;">
+              <img src="Spics/in.png" style="margin-right: 10px; float: right;">
+            </p>
+       </div>
+    <h2>Disclamer:</h2>
+    <p>We are a platform of information.Any dispute between two parties is not our responsibilty.Nestify does not allow any
+    secondary market trading of securities on the Platform </p>
+</footer>
+
+</div> <!--main div -->
+
+</html>
