@@ -171,7 +171,7 @@
     }
 }
 
-.column button {
+.column12 a {
   border: none;
   outline: 0;
   display: inline-block;
@@ -180,9 +180,27 @@
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.column button:hover {
+.column12 a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.column11 a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.column11 a:hover {
   background-color: #555;
   color: white;
 }
@@ -464,10 +482,10 @@
 }
 .content1 .submain12{
 	margin-top:6%;
-	margin-left:8%;
+	margin-left:6%;
 	background:rgb(241,238,182);
-	width:85%;
-	height:60%;
+	width:87%;
+	height:90%;
 }
 font{
 	text-align:center;
@@ -497,8 +515,7 @@ font{
     background-size: cover;
 	float:left;
 }
-
-img {
+ img {
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
  /* Some padding */
@@ -506,6 +523,40 @@ img {
 }
 
 /* Add a hover effect (blue shadow) */
-img:hover {
+ img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+footer a{
+ text-align: center;
+ text-decoration: none;
+ padding: 5px;
+ color: #000004;
+}
+footer h2
+{
+ color: #070e5f;
+ text-decoration: underline;
+ text-align:center;
+}
+footer p
+{
+ font-size:20px;
+ font-style: oblique;
+}
+.columnM a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color:  #ddd ;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+.columnM a:hover {
+  background-color: #555;
+  color: white;
 }
